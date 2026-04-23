@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 80px;
+  
+} 
+.logo {
+  font-family: var(--font-title);}

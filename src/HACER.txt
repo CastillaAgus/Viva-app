@@ -1,0 +1,14 @@
+ PONERLE ESTILOS AL HERO . 
+    agregar los iconos de buscar, sesion y carrito. 
+    poner el logo que corresponde al costado. transparente.
+
+
+ ARREGLAS LAS CARDS 
+    posicion de los textos. colores
+    boton y contador. 
+
+ ARREGLAS LAS VARIABLES PRA QUE SE VEA COMO LA MAQUETA
+
+ elegir colores princiaples y respetarlos . 
+
+ agregar un componete por cada seccion.

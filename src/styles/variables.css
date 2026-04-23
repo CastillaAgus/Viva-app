@@ -1,0 +1,17 @@
+:root {
+
+  --color-bg: #f4f6f4;
+  --color-primary: #56635a;
+  --color-secondary: #8eb998;
+  --color-accent: #56865f;
+  --color-text: #2f2f2f;
+
+
+  --radius: 20px;
+  --radius-full: 999px;
+
+  --shadow-soft: 0 8px 20px rgba(0,0,0,0.05);
+
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
