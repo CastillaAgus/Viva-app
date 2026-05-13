@@ -9,7 +9,7 @@ function ProductCard ({producto, isFavorite , onToggleFavorite}) {
     onToggleFavorite(id)
   };
         return (
-           <div className={styles.card}>
+          <div className={styles.card}>
             <div className={styles.imageContainer}>
                 <img src={imagen}  className={styles.image}  alt={nombre}/>
                <div className={styles.cardContent}>
@@ -22,13 +22,13 @@ function ProductCard ({producto, isFavorite , onToggleFavorite}) {
                 <button className={styles.favBtn} onClick={setFavorite}>{isFavorite ? "❤️" : "🤍"}</button>
                 
                 
-              </div>
-              <div className={styles.subtitle}> 
-          <p  className={styles.price} >$ {precio}</p>
+             </div>
+             <div className={styles.subtitle}> 
+               <p  className={styles.price} >$ {precio}</p>
                <Counter stock={stock}></Counter>
-               </div>
+              </div>
                 <Button texto="Agregar" clase="button"></Button>        
-           </div> 
+          </div> 
         )
 
 }

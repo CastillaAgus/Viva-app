@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carlos Sanchez",
+    "telefono": "221-5154455",
+    "email": "carlossanchez@hotmail.com",
+    "imagen": "/images/Carlos.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Rosa Mendi",
+    "telefono": "221-4585956",
+    "email": "Rosamendi@hotmail.com",
+    "imagen": "/images/Rosa.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Sebastian Perez",
+    "telefono": "221-5663322",
+    "email": "sebastianperez@hotmail.com",
+    "imagen": "/images/Sebastian.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Susana Hank",
+    "telefono": "221-6587445",
+    "email": "susanahank@hotmail.com",
+    "imagen": "/images/Susana.jpg"
+  }
+]

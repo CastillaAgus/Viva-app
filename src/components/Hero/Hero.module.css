@@ -27,7 +27,14 @@ background: linear-gradient(
 }
 
 .heroContent {
-  position: relative;
+  justify-self: flex-start;
   z-index: 2;
   max-width:500px;
+  top: 193px;
+  right: 270px;
+  
+}
+
+.heroContent h1{
+  font-size:90px;
 }

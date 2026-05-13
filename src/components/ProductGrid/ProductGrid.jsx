@@ -1,76 +1,44 @@
 import styles from "./ProductGrid.module.css"
 import ProductCard from "../ProductCard/ProductCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
- function ProductGrid(){
+ function ProductGrid({Mensaje}){
 
-const productos = [
-  {
-    id: 1,
-    nombre: "Ficus Lyrata",
-    precio: 12000,
-    tipo: "Interior",
-    imagen: "/images/ficus.jpg",
-    stock:5
-  },
-  {
-    id: 2,
-    nombre: "Monstera Deliciosa",
-    precio: 15000,
-    tipo: "Interior",
-    imagen: "/images/monstera.jpg",
-    stock:5
-  },
-  {
-    id: 3,
-    nombre: "Sansevieria",
-    precio: 9000,
-    tipo: "Interior",
-    imagen: "/images/sansevieria.jpg",
-    stock:5
-  },
-  {
-    id: 4,
-    nombre: "Lavanda",
-    precio: 7000,
-    tipo: "Exterior",
-    imagen: "/images/lavanda.jpg",
-    stock:8
-  },
-  {
-    id: 5,
-    nombre: "Helecho",
-    precio: 8000,
-    tipo: "Interior",
-    imagen: "/images/helecho.jpg",
-    stock:10
-  },
-  {
-    id: 6,
-    nombre: "Helecho",
-    precio: 8000,
-    tipo: "Interior",
-    imagen: "/images/helecho.jpg",
-    stock:10
-  },
-  {
-    id: 7,
-    nombre: "Helecho",
-    precio: 8000,
-    tipo: "Interior",
-    imagen: "/images/helecho.jpg",
-    stock:10
-  },
-  {
-    id: 8,
-    nombre: "Helecho",
-    precio: 8000,
-    tipo: "Interior",
-    imagen: "/images/helecho.jpg",
-    stock:10
+const [productos, setProductos] = useState([]);
+const [error, setError] = useState(null);
+const [cargando, setCargando] = useState(true);
+ const [favorites, setFavorites] = useState([])
+
+  useEffect (()=> {
+    fetch('/data/productos.json')
+      .then( (respuesta)=> {
+        if (!respuesta.ok) {
+          throw new Error('No se pudo cargar la información de los productos')
+        }
+        return respuesta.json();
+    })
+      .then((datos)=> {
+        setProductos(datos);
+    })
+      .catch((error) =>{
+        setError(error.message);
+      })
+      .finally(()=> {
+        setCargando(false);     
+      });
+ }, []);
+
+  if (cargando) {
+    return <p>Cargando productos, por favor espere ... </p>;
   }
-];
-    const [favorites, setFavorites] = useState([])
+
+  if (error){
+    return <p> Error : {error}</p>;
+  }
+
+
+
+
     const toggleFavorite = (id) =>{
         if(favorites.includes(id)){
           setFavorites(favorites.filter(f => f !==id));
