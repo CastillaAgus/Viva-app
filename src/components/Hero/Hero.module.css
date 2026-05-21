@@ -2,7 +2,7 @@
   width: 100%;
   height: 80vh;
   position: relative;
-  background-image: url("./images/Hero.jpg");
+  background-image: url("/images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

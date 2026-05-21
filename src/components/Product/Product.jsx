@@ -32,58 +32,34 @@ function Product() {
 return (
 
         <div className={styles.container}>
-
             <div className={styles.card}>
-
-
                 <div className={styles.imageContainer}>
-
                     <img
                         src={producto.imagen}
                         alt={producto.nombre}
                         className={styles.image}
                     />
-
-
                     <div className={styles.overlay}>
-
                         <h1 className={styles.title}>
                             {producto.nombre}
                         </h1>
-
                         <p className={styles.type}>
                             Tipo: {producto.tipo}
                         </p>
-
                         <p className={styles.price}>
                             ${producto.precio}
                         </p>
-
                     </div>
-
                 </div>
-
             </div>
 
-
-
-            {/* INFO DERECHA */}
-
-
             <div className={styles.info}>
-
                 <h2>Descripción</h2>
-
                 <p className={styles.description}>
                     {producto.descripcion}
                 </p>
-
-
                 <div className={styles.tags}>
-
-
                     <div>
-
                         <div className={styles.iconCircle}>
                             <FaSun />
                         </div>
@@ -91,60 +67,38 @@ return (
                         <span>{producto.luz}</span>
 
                     </div>
-
-
-
                     <div>
-
                         <div className={styles.iconCircle}>
                             <FaTint />
-                        </div>
-
-                        <span>{producto.riego}</span>
-
                     </div>
-
-
-
+                        <span>{producto.riego}</span>
+                    </div>
                     <div>
 
-                        <div className={styles.iconCircle}>
+                       <div className={styles.iconCircle}>
                             <FaThermometerHalf />
                         </div>
 
                         <span>{producto.temperatura}</span>
-
                     </div>
-
                 </div>
-
 
                 <h2>Cuidados</h2>
 
-
                 <ul className={styles.cuidados}>
 
-                    {
-                        producto.cuidados.map(cuidado => (
-
+                    {  producto.cuidados.map(cuidado => (
                             <li key={cuidado}>
-
                                 <FaLeaf />
-
                                 {cuidado}
 
                             </li>
 
                         ))
                     }
-
                 </ul>
-
-
             </div>
-
-        </div>
-
+       </div>
     )
 
 }
