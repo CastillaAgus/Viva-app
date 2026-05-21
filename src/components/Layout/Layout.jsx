@@ -1,15 +1,14 @@
-import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import styles from "./Layout.module.css"
-import Hero from "../Hero/Hero";
+import { Outlet } from 'react-router-dom';
+import NavBar from "../NavBar/NavBar";
+
 export function Layout({ children }) {
   return (
-    <div>
-      <Header  />
-      <Hero />
-      <main className={styles.container}>
-      {children}
-      
+    <div className={styles.layout}>
+      <NavBar  />
+      <main className={styles.main}>
+          <Outlet />
       </main>
       <Footer />
     </div>

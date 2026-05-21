@@ -3,6 +3,7 @@
     "id": 1,
     "nombre": "Carlos Sanchez",
     "telefono": "221-5154455",
+    "puesto": "Fundador",
     "email": "carlossanchez@hotmail.com",
     "imagen": "/images/Carlos.jpg"
   },
@@ -10,6 +11,7 @@
     "id": 2,
     "nombre": "Rosa Mendi",
     "telefono": "221-4585956",
+    "puesto": "Vendedora",
     "email": "Rosamendi@hotmail.com",
     "imagen": "/images/Rosa.jpg"
   },
@@ -17,6 +19,7 @@
     "id": 3,
     "nombre": "Sebastian Perez",
     "telefono": "221-5663322",
+    "puesto": "Paisajista",
     "email": "sebastianperez@hotmail.com",
     "imagen": "/images/Sebastian.jpg"
   },
@@ -24,6 +27,7 @@
     "id": 4,
     "nombre": "Susana Hank",
     "telefono": "221-6587445",
+    "puesto": "Finanzas",
     "email": "susanahank@hotmail.com",
     "imagen": "/images/Susana.jpg"
   }

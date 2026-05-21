@@ -1,33 +1,54 @@
-import styles from "./NavBar.module.css"; 
-import { useEffect,useState } from "react";
+import styles from "./NavBar.module.css";
+import { Link } from 'react-router-dom';
+import { FaSearch, FaShoppingCart, FaUser, FaBars } from "react-icons/fa";
+import { useState } from "react";
 
-function NavBar (){
-const [scrolled, setScrolled] = useState(false);
+function NavBar() {
 
-useEffect(() => {
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 50);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
-return(
+  const closeMenu = () => {
+    setMenuOpen(false);
+};
 
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-      
-      <img className={styles.logo} src="./images/logo.png"/>
+  return (
 
-      <ul className={styles["nav-links"]}>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Mi carrito</a></li>
+    <nav className={styles.navbar} >
+
+      <Link to="/"><img
+        className={styles.logo}
+        src="./images/logo-grande.png"
+        alt="Logo Viva"
+      /></Link>
+
+      <ul
+        className={`${styles["nav-links"]} ${menuOpen ? styles.active : ""
+          }`}>
+        <li onClick={closeMenu}><Link to="/">Inicio</Link></li>
+        <li onClick={closeMenu}><Link to="/productos">Productos</Link></li>
+        <li onClick={closeMenu}><Link to="/nosotros">Nosotros</Link></li>   
+        <li onClick={closeMenu}><Link to="/alta">Agregar Productos</Link></li>
       </ul>
 
-      <div className="menu-toggle"></div>
+      <ul className={styles.actions}>
+        <li><FaSearch /></li>
+        <li><FaShoppingCart /></li>
+        <li><FaUser /></li>
+      </ul>
+
+      <div
+        className={styles["menu-toggle"]}
+        onClick={toggleMenu}
+      >
+        <FaBars />
+      </div>
     </nav>
 
 
-)
+  )
 }
 export default NavBar

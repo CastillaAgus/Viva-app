@@ -1,0 +1,47 @@
+.container{
+    z-index: 1;
+    background-color: red;
+    border-color: var(--color-primary);
+    border-radius:20px;
+     overflow: hidden;
+}
+
+
+
+.content{
+    z-index: 4;
+    text-align: center;
+    color:var(--color-primary) ;
+     background-color: var(--color-bg) ;
+     padding: 10px 20px;
+     font-family: var(--font-body);
+     height: fit-content;
+}
+.content h2{
+    text-align: center;
+    margin: 8px auto;
+   
+    font-size: 26px;
+    max-height: 36px;
+}
+
+.content p{
+    margin: 10px auto;
+}
+.imageContainer {
+ height: 240px;
+overflow: hidden;
+}
+
+.image {
+    position:relative;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%; 
+    max-width: 100%;
+    display:block;
+}
+
+
+

@@ -3,7 +3,7 @@ import TeamCard from "../TeamCard/TeamCard";
 import { useState, useEffect } from "react";
 
 
-function TeamGrid () {
+function TeamGrid ({Mensaje}) {
     const [equipo, setEquipo] = useState([]);
     const [error, setError] = useState(null);
     const [cargando, setCargando] = useState(true);
@@ -35,8 +35,8 @@ function TeamGrid () {
 
     return (
          <>
-            <h1>Conoce a nuestro equipo</h1>
-            <div>
+            <h1 className={styles.h1}>{Mensaje}</h1>
+            <div className={styles.grid}>
                 {equipo.map((persona) =>(
                     <TeamCard key={persona.id} {...persona}/>
                 ))}

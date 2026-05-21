@@ -22,18 +22,39 @@ p {
   box-sizing: border-box;
 }
 
-.button {
-  background: var(--color-secondary);
-  border: none;
-  padding: 10px 18px;
-  border-radius: var(--radius-full);
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  width: 80%; 
-  margin:0 auto;
+
+.addButton{
+
+margin: 5px auto;
+
+width:calc(100% - 90px);
+
+padding:8px 4px;
+
+border:none;
+
+border-radius:999px;
+
+background:var(--primary-soft);
+
+font-size:1.2rem;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:15px;
+
+cursor:pointer;
+
 }
 
-.button:hover {
-  background: #B7D3C4;
+
+
+.addButton:hover{
+
+transform:translateY(-2px);
+
 }

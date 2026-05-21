@@ -12,3 +12,8 @@
  elegir colores princiaples y respetarlos . 
 
  agregar un componete por cada seccion.
+
+<Itemlist Mensaje{nombre seccuib} Destacadas
+ Manda un Destacados como prop , a la item list container.  ( tiene un nivel mas arriba)
+
+ const ProdAMostrar = Destacados ? productos.filter(prod => prod.destacados) : productos;

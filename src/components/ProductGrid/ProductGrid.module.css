@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 35px;
  margin: 80px auto;
+ padding: 0px 20px;
 }
 
 .h1{
@@ -11,3 +12,4 @@
   font-weight: 400;
   padding: 50px 30px
 }
+

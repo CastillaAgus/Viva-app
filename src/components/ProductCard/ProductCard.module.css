@@ -28,7 +28,6 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  width: 100%;
   object-fit: cover;
 }
 
@@ -90,6 +89,7 @@ padding:20px
 
 
 .favBtn {
+  z-index:999;
   position: absolute;
   top: 12px;
   right: 12px;

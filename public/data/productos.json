@@ -1,66 +1,241 @@
 [
-  {
-    "id": 1,
-    "nombre": "Ficus Lyrata",
-    "precio": 12000,
-    "tipo": "Interior",
-    "imagen": "/images/ficus.jpg",
-    "stock":5
-  },
-  {
-    "id": 2,
-    "nombre": "Monstera Deliciosa",
-    "precio": 15000,
-    "tipo": "Interior",
-    "imagen": "/images/monstera.jpg",
-    "stock":5
-  },
-  {
-    "id": 3,
-    "nombre": "Sansevieria",
-    "precio": 9000,
-    "tipo": "Interior",
-    "imagen": "/images/sansevieria.jpg",
-    "stock":5
-  },
-  {
-    "id": 4,
-    "nombre": "Lavanda",
-    "precio": 7000,
-    "tipo": "Exterior",
-    "imagen": "/images/lavanda.jpg",
-    "stock":8
-  },
-  {
-    "id": 5,
-    "nombre": "Helecho",
-    "precio": 8000,
-    "tipo": "Interior",
-    "imagen": "/images/helecho.jpg",
-    "stock":10
-  },
-  {
-    "id": 6,
-    "nombre": "Helecho",
-    "precio": 8000,
-    "tipo": "Interior",
-    "imagen": "/images/helecho.jpg",
-    "stock":10
-  },
-  {
-    "id": 7,
-    "nombre": "Helecho",
-    "precio": 8000,
-    "tipo": "Interior",
-    "imagen": "/images/helecho.jpg",
-    "stock":10
-  },
-  {
-    "id": 8,
-    "nombre": "Helecho",
-    "precio": 8000,
-    "tipo": "Interior",
-    "imagen": "/images/helecho.jpg",
-    "stock":10
-  }
+{
+"id":1,
+"nombre":"Ficus Lyrata",
+"precio":12000,
+"tipo":"Interior",
+"imagen":"/images/ficus.jpg",
+"stock":5,
+"descripcion":"Planta elegante de hojas grandes y presencia moderna ideal para interiores.",
+"cuidados":["Luz brillante indirecta","Riego moderado","Evitar corrientes de aire"],
+"temperatura":"18–27°C",
+"dificultad":"Media",
+"riego":"1–2 veces por semana",
+"luz":"Indirecta intensa",
+"destacado":true 
+},
+
+{
+"id":2,
+"nombre":"Monstera Deliciosa",
+"precio":15000,
+"tipo":"Interior",
+"imagen":"/images/monstera.jpg",
+"stock":5,
+"descripcion":"Planta tropical con hojas perforadas y crecimiento rápido.",
+"cuidados":["Humedad media","Luz indirecta","Evitar exceso de agua"],
+"temperatura":"20–30°C",
+"dificultad":"Fácil",
+"riego":"1–2 veces por semana",
+"luz":"Indirecta",
+"destacado":true 
+},
+
+{
+"id":3,
+"nombre":"Sansevieria",
+"precio":9000,
+"tipo":"Interior",
+"imagen":"/images/sansevieria.jpg",
+"stock":5,
+"descripcion":"Planta resistente y perfecta para personas con poco tiempo.",
+"cuidados":["Tolera poca luz","Riego escaso","No encharcar"],
+"temperatura":"15–30°C",
+"dificultad":"Muy fácil",
+"riego":"Cada 10 días",
+"luz":"Baja o indirecta",
+"destacado":true 
+},
+
+{
+"id":4,
+"nombre":"Lavanda",
+"precio":7000,
+"tipo":"Exterior",
+"imagen":"/images/lavanda.jpg",
+"stock":8,
+"descripcion":"Planta aromática de flores violetas y perfume relajante.",
+"cuidados":["Mucho sol","Suelo drenado","No exceso de agua"],
+"temperatura":"10–30°C",
+"dificultad":"Fácil",
+"riego":"2 veces por semana",
+"luz":"Sol directo",
+"destacado":true 
+},
+
+{
+"id":5,
+"nombre":"Helecho",
+"precio":8000,
+"tipo":"Interior",
+"imagen":"/images/helecho.jpg",
+"stock":10,
+"descripcion":"Planta frondosa ideal para aportar volumen y frescura.",
+"cuidados":["Alta humedad","Sin sol directo","Tierra húmeda"],
+"temperatura":"16–24°C",
+"dificultad":"Media",
+"riego":"3 veces por semana",
+"luz":"Indirecta suave",
+"destacado":true 
+},
+
+{
+"id":6,
+"nombre":"Pothos",
+"precio":8500,
+"tipo":"Interior",
+"imagen":"/images/pothos.jpg",
+"stock":7,
+"descripcion":"Planta colgante resistente y adaptable.",
+"cuidados":["Luz indirecta","Riego moderado","Poda ocasional"],
+"temperatura":"17–29°C",
+"dificultad":"Muy fácil",
+"riego":"1 vez por semana",
+"luz":"Indirecta",
+"destacado":true 
+},
+
+{
+"id":7,
+"nombre":"Calathea Orbifolia",
+"precio":18000,
+"tipo":"Interior",
+"imagen":"/images/calathea.jpg",
+"stock":4,
+"descripcion":"Hojas grandes decorativas con patrones suaves.",
+"cuidados":["Humedad alta","No sol directo","Agua moderada"],
+"temperatura":"18–26°C",
+"dificultad":"Media",
+"riego":"2 veces por semana",
+"luz":"Indirecta",
+"destacado":false 
+},
+
+{
+"id":8,
+"nombre":"Spathiphyllum",
+"precio":10000,
+"tipo":"Interior",
+"imagen":"/images/spathiphyllum.jpg",
+"stock":6,
+"descripcion":"Flor de paz elegante y purificadora del aire.",
+"cuidados":["Humedad media","Luz suave","Riego frecuente"],
+"temperatura":"18–28°C",
+"dificultad":"Fácil",
+"riego":"2 veces por semana",
+"luz":"Indirecta",
+"destacado":false
+},
+
+{
+"id":9,
+"nombre":"Cactus Columnar",
+"precio":6000,
+"tipo":"Exterior",
+"imagen":"/images/cactus.jpg",
+"stock":12,
+"descripcion":"Planta minimalista de muy bajo mantenimiento.",
+"cuidados":["Mucho sol","Poco riego","Suelo seco"],
+"temperatura":"15–35°C",
+"dificultad":"Muy fácil",
+"riego":"Cada 15 días",
+"luz":"Sol directo",
+"destacado":false
+},
+
+{
+"id":10,
+"nombre":"Suculenta Echeveria",
+"precio":5000,
+"tipo":"Exterior",
+"imagen":"/images/echeveria.jpg",
+"stock":15,
+"descripcion":"Pequeña planta decorativa de formas geométricas.",
+"cuidados":["Sol suave","Poca agua","Evitar humedad excesiva"],
+"temperatura":"15–30°C",
+"dificultad":"Muy fácil",
+"riego":"Cada 10 días",
+"luz":"Sol parcial",
+"destacado":false
+},
+
+{
+"id":11,
+"nombre":"Zamioculca",
+"precio":13000,
+"tipo":"Interior",
+"imagen":"/images/zamioculca.jpg",
+"stock":6,
+"descripcion":"Planta moderna extremadamente resistente.",
+"cuidados":["Poca agua","Tolera sombra","Riego moderado"],
+"temperatura":"18–28°C",
+"dificultad":"Muy fácil",
+"riego":"Cada 10 días",
+"luz":"Baja",
+"destacado":false
+},
+
+{
+"id":12,
+"nombre":"Cinta",
+"precio":7000,
+"tipo":"Interior",
+"imagen":"/images/cinta.jpg",
+"stock":8,
+"descripcion":"Planta clásica de hojas largas arqueadas.",
+"cuidados":["Luz suave","Riego moderado","Tierra húmeda"],
+"temperatura":"18–25°C",
+"dificultad":"Fácil",
+"riego":"2 veces por semana",
+"luz":"Indirecta",
+"destacado":false
+},
+
+{
+"id":13,
+"nombre":"Bambú de la Suerte",
+"precio":9500,
+"tipo":"Interior",
+"imagen":"/images/bambu.jpg",
+"stock":7,
+"descripcion":"Planta asociada con armonía y prosperidad.",
+"cuidados":["Agua limpia","Luz suave","Cambiar agua"],
+"temperatura":"18–30°C",
+"dificultad":"Fácil",
+"riego":"Cambiar agua semanal",
+"luz":"Indirecta",
+"destacado":false
+},
+
+{
+"id":14,
+"nombre":"Romero",
+"precio":6500,
+"tipo":"Exterior",
+"imagen":"/images/romero.jpg",
+"stock":11,
+"descripcion":"Planta aromática ideal para cocina y jardines.",
+"cuidados":["Mucho sol","Riego bajo","Buena ventilación"],
+"temperatura":"10–30°C",
+"dificultad":"Fácil",
+"riego":"1–2 veces por semana",
+"luz":"Directa",
+"destacado":false
+},
+
+{
+"id":15,
+"nombre":"Geranio",
+"precio":8000,
+"tipo":"Exterior",
+"imagen":"/images/geranio.jpg",
+"stock":9,
+"descripcion":"Planta colorida de floración abundante.",
+"cuidados":["Sol parcial","Riego moderado","Eliminar flores secas"],
+"temperatura":"15–28°C",
+"dificultad":"Fácil",
+"riego":"2 veces por semana",
+"luz":"Parcial",
+"destacado":false
+}
 ]

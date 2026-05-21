@@ -1,10 +1,10 @@
 .footer{
       width: 100%;
   padding: 40px 20px;
-  background-color: #f5f5f5;
+  background-color: var(--color-primary);
     text-align: center;
     margin-top: 20px;
-    
+    color: aliceblue;
 }
 
 .inner {

@@ -51,15 +51,15 @@ const [cargando, setCargando] = useState(true);
 
     return (
 
-    <> 
-    <h1 className={styles.h1}>Conoce nuestros productos</h1>
+    <div className={styles.container}> 
+        <h1 className={styles.h1}>{Mensaje}</h1>
         <div className={styles.grid}>
         {productos.map((producto) => (
             <ProductCard  key={producto.id} producto={producto} isFavorite={favorites.includes(producto.id)}
           onToggleFavorite={toggleFavorite} />
         ))}
         </div>
-    </>
+    </div>
     )
 } 
 export default ProductGrid
