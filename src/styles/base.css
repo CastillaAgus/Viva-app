@@ -23,38 +23,3 @@ p {
 }
 
 
-.addButton{
-
-margin: 5px auto;
-
-width:calc(100% - 90px);
-
-padding:8px 4px;
-
-border:none;
-
-border-radius:999px;
-
-background:var(--primary-soft);
-
-font-size:1.2rem;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:15px;
-
-cursor:pointer;
-
-}
-
-
-
-.addButton:hover{
-
-transform:translateY(-2px);
-
-}

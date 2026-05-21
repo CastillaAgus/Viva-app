@@ -2,14 +2,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 35px;
- margin: 80px auto;
+ margin: 20px  auto 40px;
  padding: 0px 20px;
 }
 
 .h1{
+  display:block;
+  margin: 0px auto;
+
   font-size: 3rem;
   text-align: center;
-  font-weight: 400;
-  padding: 50px 30px
+  font-weight: 600;
+  padding: 50px 30px;
+  color:var(--color-primary);
 }
 

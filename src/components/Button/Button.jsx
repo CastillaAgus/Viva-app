@@ -1,13 +1,10 @@
  import { FaLeaf } from "react-icons/fa";
-
-export default function Button({texto,clase}) {
+import styles from "./Button.module.css";
+export default function Button({texto, className, accion}) {
  
-  function manejarClick() {
-    alert('Botón clickeado!');
-  }
 
   return (
-  <button className={clase} onClick={manejarClick}><FaLeaf/>{texto}</button>
+  <button className={className} onClick={accion}><FaLeaf/>{texto}</button>
   )
 
 }

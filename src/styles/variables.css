@@ -2,10 +2,10 @@
 
   --color-bg: #f4f6f4;
   --color-bg2: rgb(217, 221, 216);
-  --color-primary: #56635a;
-  --color-secondary: #8eb998;
-  --color-accent: #56865f;
-  --color-text: #2f2f2f;
+  --color-primary: #15311e;
+  --color-secondary: #d5dad6;
+  --color-accent: #3d6444;
+  --color-text: #161616;
 
 
   --radius: 20px;
@@ -15,4 +15,53 @@
 
   --font-title: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
+
+
+    --primary: #A6B79E;
+    --primary-dark: #8EA485;
+    --primary-soft: #b7cfab;
+    --text: #2F2F2F;
+    --background: #F5F5F2;
+    --shadow:
+        0 10px 30px rgba(0, 0, 0, .06);
 }
+
+
+.addButton{
+margin: 5px auto;
+width:calc(100% - 90px);
+padding:8px 4px;
+border:none;
+border-radius:999px;
+background:var(--primary-soft);
+font-size:1.2rem;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+cursor:pointer;
+
+}
+.addButton:hover{
+
+transform:translateY(-2px);
+
+}
+
+.heroButton{
+margin-top: 5px;
+width:calc(100% - 80px);
+max-width: 200px;
+padding:8px 4px;
+border:none;
+border-radius:999px;
+background:var(--background);
+color:var(--color-accent);
+font-size:1.2rem;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+cursor:pointer;
+}
+

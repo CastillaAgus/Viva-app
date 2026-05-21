@@ -19,11 +19,11 @@ function NavBar() {
 
     <nav className={styles.navbar} >
 
-      <Link to="/"><img
+      <div className={styles.logodiv}><Link to="/"><img
         className={styles.logo}
         src="./images/logo-grande.png"
         alt="Logo Viva"
-      /></Link>
+      /></Link><p>Viva!</p></div>
 
       <ul
         className={`${styles["nav-links"]} ${menuOpen ? styles.active : ""

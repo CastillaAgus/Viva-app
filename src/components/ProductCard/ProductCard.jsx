@@ -5,9 +5,15 @@ import { Link } from "react-router-dom";
 
 function ProductCard ({producto, isFavorite , onToggleFavorite}) {
   const {id,imagen, nombre, precio, tipo,stock} = producto; 
-  const setFavorite = ()=>{
+  const setFavorite = (e)=>{
+    e.preventDefault();
     onToggleFavorite(id)
   };
+
+  function manejarClick(){
+    alert("Se agrego al carrito");
+  }
+
         return (
           <div className={styles.card}>
             <Link to={`/producto/${producto.id}`}>
@@ -23,9 +29,8 @@ function ProductCard ({producto, isFavorite , onToggleFavorite}) {
              <div className={styles.subtitle}> 
                <p  className={styles.price} >$ {precio}</p>
                <Counter stock={stock}></Counter>
-              </div>
-             
-                <Button texto="Agregar" clase="addButton"></Button>        
+              </div>           
+                <Button texto="Agregar" accion={manejarClick} className="addButton"></Button>        
           </div> 
         )
 

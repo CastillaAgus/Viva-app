@@ -15,8 +15,23 @@
 
 }
 
+.logodiv{
+  display:flex;
+  color: white;
+  align-items: center;
+
+}
+.logodiv p{
+    font-weight: 400;
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    font-style:italic;
+}
+
+
+
 
 .logo {
+  margin-top:10px;
  height: 50px;
   width: auto;
   object-fit: contain;
@@ -84,12 +99,13 @@
   }
 
   .nav-links {
+    margin-top:0px;
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background: #9CB397;
+    background: var(--color-primary);
     padding: 25px;
     flex-direction: column;
     gap: 20px;
@@ -97,6 +113,9 @@
       0 8px 15px rgba(0, 0, 0, .08);
   }
 
+  .nav-links:hover{
+    transition: background-color 0.3s ease;
+  }
 
   .active {
     display: flex;

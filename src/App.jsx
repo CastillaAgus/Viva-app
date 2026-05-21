@@ -6,17 +6,17 @@ import { FormularioContainer } from './components/FormularioContainer/Formulario
 import { Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero/Hero';
 import Product from './components/Product/Product';
-
+import Inicio from './components/Inicio/Inicio';
 function App() {
 
   return (
    <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Inicio />} />
         <Route path="/productos" element={<ProductGrid 
-                           Mensaje={"Nuestro productos"}/>} />
+                           mensaje={"Nuestros productos"} destacados={false}/>} />
          <Route path="/nosotros" element={<TeamGrid
-					   Mensaje={"Conoce a nuestro equipo"}/>} />
+					   Mensaje={"Nuestro Equipo"}/>} />
         <Route path="/alta" element={<FormularioContainer />} />
         <Route path="/producto/:id" element={<Product />} />
       </Route>    
