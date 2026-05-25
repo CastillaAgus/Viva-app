@@ -1,8 +1,8 @@
 import styles from "./ProductCard.module.css"
 import Button from "../Button/Button";
-import { Counter } from "../Counter/Counter";
 import { Link } from "react-router-dom";
-
+import { useCart } from "../../context/CartContext";
+import { useState } from "react";
 function ProductCard ({producto, isFavorite , onToggleFavorite}) {
   const {id,imagen, nombre, precio, tipo,stock} = producto; 
   const setFavorite = (e)=>{
@@ -10,9 +10,26 @@ function ProductCard ({producto, isFavorite , onToggleFavorite}) {
     onToggleFavorite(id)
   };
 
-  function manejarClick(){
-    alert("Se agrego al carrito");
-  }
+  const [amount, setAmount ] = useState(0)
+  const plus = () => {
+      if ( amount < stock ){
+          setAmount(amount +1);
+      }
+  };
+  const minus = () => {
+      if(amount >= 1) {
+          setAmount(amount -1);
+      }
+  };
+
+
+
+  const {addToCart} = useCart();
+  const handleAddToCart = () => {
+    addToCart(producto, amount);
+    alert(`Agregaste ${amount} unidades de ${nombre} al carrito`);
+  };
+
 
         return (
           <div className={styles.card}>
@@ -28,9 +45,13 @@ function ProductCard ({producto, isFavorite , onToggleFavorite}) {
              </Link> 
              <div className={styles.subtitle}> 
                <p  className={styles.price} >$ {precio}</p>
-               <Counter stock={stock}></Counter>
+                <div className={styles.counter}>
+                    <button onClick={minus}>-</button>
+                    <p style={{ margin: '0 10px' }}>{amount}</p>
+                    <button onClick={plus}>+</button>
+                </div>
               </div>           
-                <Button texto="Agregar" accion={manejarClick} className="addButton"></Button>        
+                <Button texto="Agregar" accion={handleAddToCart} className="addButton"></Button>        
           </div> 
         )
 

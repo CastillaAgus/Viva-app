@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero/Hero';
 import Product from './components/Product/Product';
 import Inicio from './components/Inicio/Inicio';
+import Cart from './components/Cart/Cart';
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
 					   Mensaje={"Nuestro Equipo"}/>} />
         <Route path="/alta" element={<FormularioContainer />} />
         <Route path="/producto/:id" element={<Product />} />
+        <Route path="/carrito" element={<Cart />} />
       </Route>    
     </Routes>
        )
